@@ -1,0 +1,207 @@
+$cyan: hsl(180, 66%, 49%);
+$darkViolet: hsl(257, 27%, 26%);
+$red: hsl(0, 87%, 67%);
+$gray: hsl(0, 0%, 75%);
+$grayishViolet: hsl(257, 7%, 63%);
+$veryDBlue: hsl(255, 11%, 22%);
+$veryDViolet: hsl(260, 8%, 14%);
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 50px 30px 0px 30px;
+}
+.logo{
+    width: 50%;
+}
+.hamburger {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+#hamburgerMenu {
+    width: 30px;
+    height: 30px;
+}
+.container {
+    width: 100vw;
+}
+
+.mobile-nav {
+    display: none;
+}
+main {
+    padding: 40px 40px 0px 40px;
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+}
+#working {
+    max-width: 400px;
+    height: 100%;
+    display: block;
+    margin: auto;
+}
+h1 {
+    color: $veryDBlue;
+    text-align: center;
+}
+p {
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+    color: $gray;
+    padding: 10px 20px 20px 20px;
+}
+#get-started {
+    border: none;
+    padding: 10px 40px;
+    background-color: $cyan;
+    border-radius: 20px;
+    color: white;
+    font-size: 15px;
+}
+.shortlink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $darkViolet;
+    padding: 20px 10px 10px 10px;
+    border-radius: 10px;
+    position: relative;
+    z-index: -1;
+    margin-bottom: 40px;
+}
+.shortlinkbg{
+    background-image: url(../images/bg-shorten-mobile.svg);
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 0;
+    background-repeat: no-repeat;
+    top: 0;
+    right: 0;
+    border-radius: 5px;
+    
+}
+#linktoshort {
+    width: 90%;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+    padding:10px;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+#linktoshortbtn {
+    width: 90%;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+    padding:10px;
+    margin-bottom: 20px;
+    background-color: $cyan;
+    color: white;
+    font-size: 14px;
+    z-index: 1;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        text-align: center;
+        color: $veryDBlue;
+       margin-top: 20px;
+    }
+    .featureimg {
+        
+        background-color: $darkViolet;
+        padding:15px;
+        border-radius: 50%;
+        
+    }
+}
+.boostlnks {
+    text-align: center;
+    background-color: $darkViolet;
+    position: relative;
+    height: 300px;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    color: white;
+
+}
+.boostlinksimg {
+    background-image: url(../images/bg-boost-mobile.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.boostlnks button {
+    border: none;
+    padding: 10px 40px;
+    background-color: $cyan;
+    border-radius: 20px;
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+}
+footer {
+    background-color: $veryDBlue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px 50px 0px;
+    ul {
+        list-style: none;
+        text-align: center;
+    }
+    
+    #footerlinkhead  {
+        margin-bottom: 20px;
+        margin-top: 20px;
+
+        a {
+            color: white;
+        }
+        
+    }
+    a {
+        text-decoration: none;
+        color: $gray;
+        
+    }
+    .socialmedia {
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+        margin-top: 20px;
+    }
+}
+
